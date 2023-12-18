@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Sidebar from './Components/Sidebar';
+import React from 'react';
+import Navbar from './Components/Navbar';
 import Main from './Components/Main';
 
 function App() {
 
   return (
-    <div>
-      <Sidebar />
+    <div className='font-Poppins'>
+      <Navbar />
       <Main />
     </div>
   )
