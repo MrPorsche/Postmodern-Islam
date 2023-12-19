@@ -1,3 +1,5 @@
+import plugin from 'tailwindcss';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,6 +10,9 @@ export default {
     extend: {
       fontFamily: {
         'Poppins' : ['Poppins', 'sans-serif'],
+      },
+      backgroundImage: {
+        BackCover: "url('./src/Components/bg.jpg')",
       },
     },
   },
