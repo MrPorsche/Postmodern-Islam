@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav
-        className="bg-orange-300 h-auto"
+        className="bg-orange-800/5 h-auto"
     >
         <div
             className="flex items-center
@@ -26,10 +26,11 @@ const Navbar = () => {
                             flex justify-between"
             >
                 <h1
-                    className="cursor-pointer h-12 text-center
-                                text-orange-950 hover:text-orange-100
+                    className="cursor-pointer h-12 text-center font-extrabold
+                                text-orange-950 hover:text-orange-950
                                 hover:text-3xl ease-in duration-300
-                                hover:border-b-2 hover:border-orange-950"
+                               text-shadow text-shadow-orange-100
+                               hover:text-shadow-blur-9 uppercase"
                 >
                     PostModern <br />Islam
                 </h1>
@@ -44,7 +45,7 @@ const Navbar = () => {
             </div>
             <ul
                 className="md:flex hidden uppercase
-                            items-center gap-8 text-orange-100"
+                            items-center gap-8 text-orange-800"
             >
                 <li>
                     <a
@@ -52,29 +53,32 @@ const Navbar = () => {
                         className="px-3 py-4 inline-block
                         hover:text-3xl ease-in duration-300
                         hover:text-orange-950 border-orange-800
-                        hover:border-b-8"
+                        hover:border-b-8 hover:font-bold
+                        hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
                     >
                         Home
                     </a>
                 </li>
                 <li>
                     <a
-                        href="/src/Components/Home.jsx"
+                        href="./Author.jsx"
                         className="px-3 py-4 inline-block
                         hover:text-3xl ease-in duration-300
                         hover:text-orange-950 border-orange-800
-                        hover:border-b-8"
+                        hover:border-b-8 hover:font-bold
+                        hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
                     >
                         Author
                     </a>
                 </li>
                 <li>
                     <a
-                        href="/src/Components/Home.jsx"
+                        href="./Author.jsx"
                         className="px-3 py-4 inline-block
                         hover:text-3xl ease-in duration-300
                         hover:text-orange-950 border-orange-800
-                        hover:border-b-8"
+                        hover:border-b-8 hover:font-bold
+                        hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
                     >
                         Book
                     </a>
@@ -85,7 +89,8 @@ const Navbar = () => {
                         className="px-3 py-4 inline-block
                         hover:text-3xl ease-in duration-300
                         hover:text-orange-950 border-orange-800
-                        hover:border-b-8"
+                        hover:border-b-8 hover:font-bold
+                        hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
                     >
                         Blog
                     </a>
@@ -123,7 +128,9 @@ const Navbar = () => {
                                         items-center rounded-full shadow-lg
                                     bg-orange-200 shadow-orange-900 m-2 p-4
                                         hover:text-3xl ease-in duration-300
-                                        hover:scale-110"
+                                        hover:scale-110 hover:text-orange-950
+                                        hover:font-bold hover:text-shadow
+                                        hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <AiFillHome size={20}/>
                             <span className="pl-4 ">
@@ -140,7 +147,9 @@ const Navbar = () => {
                                         items-center rounded-full shadow-lg
                                     bg-orange-200 shadow-orange-900 m-2 p-4
                                         hover:text-3xl ease-in duration-300
-                                        hover:scale-110"
+                                        hover:scale-110 hover:text-orange-950
+                                        hover:font-bold hover:text-shadow
+                                        hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <FaPenNib size={20}/>
                             <span className="pl-4">Author</span>
@@ -155,7 +164,9 @@ const Navbar = () => {
                                         items-center rounded-full shadow-lg
                                     bg-orange-200 shadow-orange-900 m-2 p-4
                                         hover:text-3xl ease-in duration-300
-                                        hover:scale-110"
+                                        hover:scale-110 hover:text-orange-950
+                                        hover:font-bold hover:text-shadow
+                                        hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <IoIosBook size={20}/>
                             <span className="pl-4">Book</span>
@@ -170,7 +181,9 @@ const Navbar = () => {
                                         items-center rounded-full shadow-lg
                                     bg-orange-200 shadow-orange-900 m-2 p-4
                                         hover:text-3xl ease-in duration-300
-                                        hover:scale-110"
+                                        hover:scale-110 hover:text-orange-950
+                                        hover:font-bold hover:text-shadow
+                                        hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <FaBlog size={20}/>
                             <span className="pl-4">Blog</span>
@@ -185,7 +198,9 @@ const Navbar = () => {
                                         items-center rounded-full shadow-lg
                                     bg-orange-200 shadow-orange-900 m-2 p-4
                                         hover:text-3xl ease-in duration-300
-                                        hover:scale-110"
+                                        hover:scale-110 hover:text-orange-950
+                                        hover:font-bold hover:text-shadow
+                                        hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <TbMailFilled size={20}/>
                             <span className="pl-4">Contact</span>

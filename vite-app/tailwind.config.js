@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 import plugin from 'tailwindcss';
 
 /** @type {import('tailwindcss').Config} */
@@ -13,8 +14,17 @@ export default {
       },
       backgroundImage: {
         BackCover: "url('./src/Components/bg.jpg')",
+        ProfilePic: "url('./src/Components/profile.jpg')"
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@designbycode/tailwindcss-text-shadow",),
+    ({
+      shadowColor: "rgba(0, 0, 0, 0.5)",
+      shadowBlur: "3px",
+      shadowOffsetX: "2px",
+      shadowOffsetY: "2px",
+  }),
+  ],
 }
