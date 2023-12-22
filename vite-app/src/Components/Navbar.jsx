@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav
-        className="bg-orange-800/5 h-auto"
+        className="bg-transparents h-auto"
     >
         <div
             className="flex items-center
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <h1
                     className="cursor-pointer h-12 text-center font-extrabold
                                 text-orange-950 hover:text-orange-950
-                                hover:text-3xl ease-in duration-300
+                                hover:text-3xl ease-in duration-1000
                                text-shadow text-shadow-orange-100
                                hover:text-shadow-blur-9 uppercase"
                 >
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <a
                         href="/src/Components/Home.jsx"
                         className="px-3 py-4 inline-block
-                        hover:text-3xl ease-in duration-300
+                        hover:text-3xl ease-in duration-500
                         hover:text-orange-950 border-orange-800
                         hover:border-b-8 hover:font-bold
                         hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
@@ -63,7 +63,7 @@ const Navbar = () => {
                     <a
                         href="./Author.jsx"
                         className="px-3 py-4 inline-block
-                        hover:text-3xl ease-in duration-300
+                        hover:text-3xl ease-in duration-500
                         hover:text-orange-950 border-orange-800
                         hover:border-b-8 hover:font-bold
                         hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
@@ -75,7 +75,7 @@ const Navbar = () => {
                     <a
                         href="./Author.jsx"
                         className="px-3 py-4 inline-block
-                        hover:text-3xl ease-in duration-300
+                        hover:text-3xl ease-in duration-500
                         hover:text-orange-950 border-orange-800
                         hover:border-b-8 hover:font-bold
                         hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
@@ -87,7 +87,7 @@ const Navbar = () => {
                     <a
                         href="/src/Components/Home.jsx"
                         className="px-3 py-4 inline-block
-                        hover:text-3xl ease-in duration-300
+                        hover:text-3xl ease-in duration-500
                         hover:text-orange-950 border-orange-800
                         hover:border-b-8 hover:font-bold
                         hover:text-shadow hover:text-shadow-white hover:text-shadow-blur-9"
@@ -100,21 +100,20 @@ const Navbar = () => {
                 className="md:block hidden"
             >
                 <button
-                        className="bg-orange-700 text-orange-100
-                                    px-5 py-2 rounded-full hover:font-bold
-                                    hover:bg-orange-100 hover:text-orange-700
-                                    hover:text-3xl ease-in duration-300 hover:scale-110"
+                        className="bg-transparent text-orange-100
+                                    border-white border-[1px] px-5 py-2 rounded-full
+                                    hover:text-orange-800 hover:font-bold hover:bg-white
+                                    hover:text-3xl ease-in duration-500 hover:scale-110
+                                    hover:text-shadow hover:text-shadow-orange-950"
                 >
                     Contact
                 </button>
             </div>
             {/* Moibile Nav */}
             <div
-                className={`md:hidden ${openMenu ? ''
-                :
-                'hidden scale-110 ease-in-out duration-100'}
-                bg-orange-300/70 absolute w-full h-full
-                bottom-0 py-24 pl-4`}
+                className={`md:hidden bg-orange-300/70 absolute
+                w-full h-full bottom-0 py-24 pl-4 duration-1000
+                ${openMenu ? "top-0" : "top-[-100%] ease-in-out"}`}
             >
                 <div
                     className="flex flex-col"
@@ -124,13 +123,10 @@ const Navbar = () => {
                     >
                         <a
                             href="#home"
-                            className="px-3 py-7 w-[75%] flex justify-center
-                                        items-center rounded-full shadow-lg
-                                    bg-orange-200 shadow-orange-900 m-2 p-4
-                                        hover:text-3xl ease-in duration-300
-                                        hover:scale-110 hover:text-orange-950
-                                        hover:font-bold hover:text-shadow
-                                        hover:text-shadow-white hover:text-shadow-blur-9"
+                            className="px-3 py-7 w-[75%] flex justify-center items-center rounded-full shadow-lg
+                                       bg-transparent shadow-orange-900 m-2 p-4 hover:text-3xl ease-in duration-300
+                                       hover:scale-110 hover:text-orange-950 hover:font-bold hover:text-shadow
+                                     hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <AiFillHome size={20}/>
                             <span className="pl-4 ">
@@ -143,13 +139,10 @@ const Navbar = () => {
                     >
                         <a
                             href="#author"
-                            className="px-3 py-7 w-[75%] flex justify-center
-                                        items-center rounded-full shadow-lg
-                                    bg-orange-200 shadow-orange-900 m-2 p-4
-                                        hover:text-3xl ease-in duration-300
-                                        hover:scale-110 hover:text-orange-950
-                                        hover:font-bold hover:text-shadow
-                                        hover:text-shadow-white hover:text-shadow-blur-9"
+                            className="px-3 py-7 w-[75%] flex justify-center items-center rounded-full shadow-lg
+                                       bg-transparent shadow-orange-900 m-2 p-4 hover:text-3xl ease-in duration-300
+                                       hover:scale-110 hover:text-orange-950 hover:font-bold hover:text-shadow
+                                     hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <FaPenNib size={20}/>
                             <span className="pl-4">Author</span>
@@ -160,13 +153,10 @@ const Navbar = () => {
                     >
                         <a
                             href="#book"
-                            className="px-3 py-7 w-[75%] flex justify-center
-                                        items-center rounded-full shadow-lg
-                                    bg-orange-200 shadow-orange-900 m-2 p-4
-                                        hover:text-3xl ease-in duration-300
-                                        hover:scale-110 hover:text-orange-950
-                                        hover:font-bold hover:text-shadow
-                                        hover:text-shadow-white hover:text-shadow-blur-9"
+                            className="px-3 py-7 w-[75%] flex justify-center items-center rounded-full shadow-lg
+                                       bg-transparent shadow-orange-900 m-2 p-4 hover:text-3xl ease-in duration-300
+                                       hover:scale-110 hover:text-orange-950 hover:font-bold hover:text-shadow
+                                     hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <IoIosBook size={20}/>
                             <span className="pl-4">Book</span>
@@ -177,13 +167,10 @@ const Navbar = () => {
                     >
                         <a
                             href="#blog"
-                            className="px-3 py-7 w-[75%] flex justify-center
-                                        items-center rounded-full shadow-lg
-                                    bg-orange-200 shadow-orange-900 m-2 p-4
-                                        hover:text-3xl ease-in duration-300
-                                        hover:scale-110 hover:text-orange-950
-                                        hover:font-bold hover:text-shadow
-                                        hover:text-shadow-white hover:text-shadow-blur-9"
+                            className="px-3 py-7 w-[75%] flex justify-center items-center rounded-full shadow-lg
+                                       bg-transparent shadow-orange-900 m-2 p-4 hover:text-3xl ease-in duration-300
+                                       hover:scale-110 hover:text-orange-950 hover:font-bold hover:text-shadow
+                                     hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <FaBlog size={20}/>
                             <span className="pl-4">Blog</span>
@@ -194,13 +181,10 @@ const Navbar = () => {
                     >
                         <a
                             href="#contact"
-                            className="px-3 py-7 w-[75%] flex justify-center
-                                        items-center rounded-full shadow-lg
-                                    bg-orange-200 shadow-orange-900 m-2 p-4
-                                        hover:text-3xl ease-in duration-300
-                                        hover:scale-110 hover:text-orange-950
-                                        hover:font-bold hover:text-shadow
-                                        hover:text-shadow-white hover:text-shadow-blur-9"
+                            className="px-3 py-7 w-[75%] flex justify-center items-center rounded-full shadow-lg
+                                       bg-transparent shadow-orange-900 m-2 p-4 hover:text-3xl ease-in duration-300
+                                       hover:scale-110 hover:text-orange-950 hover:font-bold hover:text-shadow
+                                     hover:text-shadow-white hover:text-shadow-blur-9"
                         >
                             <TbMailFilled size={20}/>
                             <span className="pl-4">Contact</span>

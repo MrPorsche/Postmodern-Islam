@@ -3,10 +3,9 @@ import React from 'react';
 const Home = () => {
   return (
     <section
-      id="home"
-      className="w-full h-screen border-white border-2"
+      id=""
+      className="w-full border-white border-2"
     >
-      
       <div className="flex flex-col justify-center text-center items-center h-3/5">
         <h2 className="text-shadow text-shadow-white text-shadow-blur-2 md:text-3xl text-xl text-orange-600  font-semibold pb-4">A Restrictive Definition of Secular and Religion</h2>
         <h1 className="md:text-8xl text-3xl text-orange-800 font-bold py-5 uppercase border-t-4 text-shadow text-shadow-white text-shadow-blur-5">PostModern Islam</h1>
