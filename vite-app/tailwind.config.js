@@ -16,6 +16,11 @@ export default {
         BackCover: "url('./src/Components/bg.jpg')",
         ProfilePic: "url('./src/Components/profile.jpg')"
       },
+      colors: {
+        linkedin: "#0077B5",
+        twitter: "#1DA1F2",
+        facebook: "#1877F2",
+      }
     },
   },
   plugins: [
