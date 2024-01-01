@@ -14,7 +14,7 @@ export default {
       },
       backgroundImage: {
         BackCover: "url('./src/Components/bg.jpg')",
-        ProfilePic: "url('./src/Components/profile.jpg')"
+        ProfilePic: "url('./src/Components/profile.png')"
       },
       colors: {
         linkedin: "#0077B5",
