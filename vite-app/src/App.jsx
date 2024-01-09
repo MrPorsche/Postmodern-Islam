@@ -25,7 +25,7 @@ const App = () => {
         </Routes>
       </Router>
       
-      <footer>
+      <footer className="mt-4 px-5">
         <h3>
           All rightss reserved.
         </h3>

@@ -2,14 +2,14 @@ import React from 'react'
 import bookCover from './bookcover.jpg'
 const Book = () => {
   return (
-    <div className="book">
+    <div className="book p-5">
     
     
-    {/* <h1 className="absolute left-20 inset-y-60 uppercase text-center text-5xl font-extrabold text-shadow text-orange-800">About this Book:</h1> */}
+    <h1 className="left-20 inset-y-60 uppercase text-start text-5xl font-extrabold text-shadow text-orange-800">About this Book:</h1>
     
-    <div className="text-start text-2xl font-semibold h-[600px]">
+    <div className="mt-5 text-start text-2xl tracking-[3px] font-semibold w-full">
 
-       <img src={bookCover} alt="Book Cover" className="float-left w-[250px] mr-6 rounded shadow-lg px-5"/> 
+       <img src={bookCover} alt="Book Cover" className="float-left w-[400px] mr-6 rounded shadow-lg px-1"/> 
        In this book, AK Sayed states that the Laws of Nature and the wider universe and all things associated with it are the only Truth and Reality there is. 
       
       These include God as Creator, free of all dogmas and doctrines of Religion; His Guidance in thecontext of His Work in Nature and the wider universe; and the secular and scientific path of the creation, not religion. In the Abrahamic Faiths, their main aim is to establish Eternal Truth and Reality in all human Speech and Knowledge and establish an objective perspective of God, Religion and Secularism. 
