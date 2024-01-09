@@ -7,6 +7,7 @@ import Author from "./Components/Author";
 import Book from "./Components/Book";
 import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -25,11 +26,7 @@ const App = () => {
         </Routes>
       </Router>
       
-      <footer className="mt-4 px-5">
-        <h3>
-          All rightss reserved.
-        </h3>
-      </footer>
+      <Footer />
     </section>
   )
 }
