@@ -17,7 +17,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-[#f6efe7] py-8">
+    <div className="py-8">
       <div className="container mx-auto">
         
         <h1 className="text-[100px] leading-[110px] text-black pg-[10px] text-start">My Blog</h1>
@@ -25,7 +25,7 @@ const Blog = () => {
         <div className="flex">
           <div className="flex flex-col w-2/3">
             {posts.map(post => (
-              <div key={post.id} className="bg-white p-4 mb-4">
+              <div key={post.id} className="p-4 mb-4">
                 <h2 className="text-xl font-semibold mb-2 cursor-pointer">{post.title}</h2>
                 
                 <p className="text-gray-600 mb-6">{post.body}</p>
